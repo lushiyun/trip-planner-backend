@@ -26,6 +26,7 @@ ActiveRecord::Schema.define(version: 2020_08_19_040146) do
   create_table "places", force: :cascade do |t|
     t.string "name"
     t.string "place_id"
+    t.string "category"
     t.bigint "day_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
